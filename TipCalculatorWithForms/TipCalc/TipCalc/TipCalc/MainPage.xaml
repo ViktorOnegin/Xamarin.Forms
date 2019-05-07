@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TipCalc"
+             x:Class="TipCalc.MainPage">
+    <StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Tip% :"/>
+            <Label Text="0" x:Name="tip"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Fill">
+            <Slider Maximum="100" x:Name="slider" 
+                    ValueChanged="Slider_ValueChanged"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Bill amount :"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Entry Placeholder="" x:Name="editText"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Button Text="Calculate" x:Name="CalcBtn"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Tip amount :"/>
+            <Label Text="0" x:Name="TipAmount"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Total amount :"/>
+            <Label Text="0" x:Name="TotalAmount"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
