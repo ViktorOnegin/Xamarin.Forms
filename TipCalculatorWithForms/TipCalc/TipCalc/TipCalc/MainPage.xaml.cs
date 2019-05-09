@@ -26,11 +26,7 @@ namespace TipCalc
         {
             InitializeComponent();
 
-           
-
             slider.ValueChanged += Slider_ValueChanged;
-
-
         }
 
         public void Slider_ValueChanged(object sender, ValueChangedEventArgs e)

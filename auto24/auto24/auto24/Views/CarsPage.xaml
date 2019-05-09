@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="auto24.Views.CarsPage">
+    <ListView ItemsSource="{Binding Cars}"
+              HasUnevenRows="True"
+              SeparatorVisibility="None"
+              HorizontalOptions="FillAndExpand"
+              VerticalOptions="FillAndExpand">
+
+        <ListView.ItemTemplate>
+
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout Margin="6,4,6,4"
+                                 BackgroundColor="White">
+                        <Label Text="{Binding tootja}"
+                               Margin="8"
+                               FontAttributes="Bold"
+                               FontSize="10"/>
+                        <Label Text="{Binding aasta}"
+                               Margin="8"
+                               FontAttributes="Bold"
+                               FontSize="10"/>
+                        <Label Text="{Binding hind}"
+                               Margin="8"
+                               FontAttributes="Bold"
+                               FontSize="10"/>
+                        <Label Text="{Binding mudel}"
+                               Margin="8"
+                               FontAttributes="Bold"
+                               FontSize="10"/>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>
